@@ -10,9 +10,7 @@ class Listview2Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Listview2Screen'),
-        elevation: 0,
-        backgroundColor: Colors.indigo,
+        title: Text('Listview2Screen')
       ),
       body: ListView.separated(
         itemCount: options.length,
@@ -21,9 +19,7 @@ class Listview2Screen extends StatelessWidget {
             title: Text(options[index]),
             leading: Icon(Icons.accessibility_new, color: Colors.indigo,),
             trailing: Icon(Icons.keyboard_arrow_right, color: Colors.indigo,),
-            onTap: () {
-              print(options[index]);
-            },
+            onTap: () {},
           ),
       )
     );
