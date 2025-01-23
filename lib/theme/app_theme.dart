@@ -12,9 +12,23 @@ class AppTheme {
           color: primary,
           elevation: 0
         ),
+
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(foregroundColor: primary),
-        )
+        ),
+
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: primary,
+          elevation: 5
+        ),
+
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+                backgroundColor: primary,
+                foregroundColor: Colors.white,
+                elevation: 5,
+          ),
+        ),
   );
 
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
