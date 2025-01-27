@@ -29,6 +29,21 @@ class AppTheme {
                 elevation: 5,
           ),
         ),
+
+        inputDecorationTheme: InputDecorationTheme(
+          floatingLabelStyle: TextStyle(color: primary),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: primary),
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10), bottomRight: Radius.circular(10))
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: primary),
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10), bottomRight: Radius.circular(10))
+          ),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10), bottomRight: Radius.circular(10))
+          )
+        ),
   );
 
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
